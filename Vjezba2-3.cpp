@@ -3,7 +3,7 @@ a) dinamicki dodaje novi element na pocetak liste,
 b) ispisuje listu,
 c) dinamicki dodaje novi element na kraj liste,
 d) pronalazi element u listi (po prezimenu),
-e) briše odredeni element iz liste.
+e) briÅ¡e odredeni element iz liste.
 U zadatku se ne smiju koristiti globalne varijable.*/
 
 /*3. Prethodnom zadatku dodati funkcije:
@@ -270,9 +270,7 @@ void readFromFile(position p) {
 			if (temp == NULL)
 				printf("Error in allocating memory.\n");
 			else {
-				// -----------------Ukoliko citamo iz file-a u koji smo vec ucitali podatke--------------------
-				//u prvu varijablu spremi smece (od alociranja tempa). potrebno je izbrisat prvu varijablu iz liste kad se
-				//zavrsi ucitavanje. to radimo funkcijom deleteFirst (neka korisnik sam pozove jer nije uvijek potrebna)
+				
 				fscanf_s(stream, "%s %s %d", temp->name, 128, temp->surename, 128, &temp->birthYear);
 				temp->next = p->next;
 				p->next = temp;
